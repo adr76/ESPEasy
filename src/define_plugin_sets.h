@@ -147,6 +147,12 @@ To create/register a plugin, you have to :
  * BUILD Configs **************************************************************
 \******************************************************************************/
 
+// My builds
+#ifdef MY_CUSTOM
+    #undef BUILD_GIT
+	#define PLUGIN_BUILD_CUSTOM
+#endif
+
 // IR library is large, so make a separate build including stable plugins and IR.
 #ifdef PLUGIN_BUILD_DEV_IR
     #define PLUGIN_BUILD_DEV       // add dev

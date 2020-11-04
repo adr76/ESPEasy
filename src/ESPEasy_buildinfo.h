@@ -29,7 +29,7 @@
 #endif // if defined(ESP32)
 
 #ifndef BUILD_GIT
-# define BUILD_GIT "(custom)"
+  # define BUILD_GIT "(custom)"
 #endif // ifndef BUILD_GIT
 
 

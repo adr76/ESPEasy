@@ -30,7 +30,7 @@ env.Append(CPPDEFINES=[
 	"PLUGIN_SET_NONE",
 	#"PLUGIN_SET_ONLY_SWITCH",
 	"USES_P001",  # Switch
-	#"USES_P002",  # ADC
+	"USES_P002",  # ADC
 	"USES_P003",  # Pulse
 	"USES_P004",  # Dallas DS18b20
 	"USES_P005",  # DHT
@@ -43,10 +43,12 @@ env.Append(CPPDEFINES=[
 	#"USES_P028",  # BME280
 	"USES_P029",  # Output
 	#"USES_P031",  # SHT1X
+    "USES_P033",  # Dummy Device
 	#"USES_P036",  # FrameOLED
 	"USES_P037",  # MQTTImport
 	#"USES_P049",  # MHZ19
 	#"USES_P052",  # SenseAir
+	#"USES_P055",  # Buzzer (chiming sequences)
 	#"USES_P056",  # SDS011-Dust
 	#"USES_P059",  # Encoder
 	#"USES_P061",  # Keypad

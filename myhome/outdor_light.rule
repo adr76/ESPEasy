@@ -1,0 +1,19 @@
+// outdor_light
+// ----------------------------
+
+// Init
+on System#Boot do
+   gpio,12,0 // Light
+   gpio,13,0 // PIR
+   gpio,14,0 // Night sensor
+endon
+
+// RF433 Light switch
+on RF#in do
+ if [RF#in]=15665442 or [RF#in]=16762196
+  gpio,12,1
+ endif
+ if [RF#in]=15665444 or [RF#in]=16762193
+  gpio,12,0
+ endif
+endon
